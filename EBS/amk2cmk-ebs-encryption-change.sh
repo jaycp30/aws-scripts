@@ -10,6 +10,8 @@ INSTANCE_ID="$1"
 REGION="<aws-region-code>"
 NEW_KMS_KEY_ID="arn:aws:kms:eu-west-2:<aws-accountID>:key/<customer-managed-kms-keyid>"
 
+echo $INSTANCE_ID
+
 # === Logging config block ====
 TS=$(date '+%y%m%d%H%M%S')
 LOG_FILE="${INSTANCE_ID}-_amk2cmk_${TS}.log"
